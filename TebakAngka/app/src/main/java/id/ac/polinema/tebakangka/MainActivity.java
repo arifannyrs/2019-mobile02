@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
 	//  TODO: deklarasikan variabel di sini
 	private int number;
-	private EditText numperInput;
+	private EditText numberInput;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -51,5 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
 	public void handleReset(View view) {
 		// TODO: Reset tampilan
+		numberInput.setText("");
+		initRandomNumber();
 	}
 }
